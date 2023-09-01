@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{%static '/css/about.css' %}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="{% static '/img/hos.jpg' %}" alt="Image 1">
+            <div class="carousel-caption">
+              <h3>Slide 1</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img style="width: 100px;" height="100px" src="{% static '/img/hos1.jpg' %}" alt="Image 2">
+            <div class="carousel-caption">
+              <h3>Slide 2</h3>
+              <p>Mauris lacinia velit eget magna ullamcorper vehicula.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="{% static '/img/hos2.jpg' %}" alt="Image 3">
+            <div class="carousel-caption">
+              <h3>Slide 3</h3>
+              <p>Integer in purus tincidunt, sodales quam vel, fringilla elit.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+</body>
+</html>

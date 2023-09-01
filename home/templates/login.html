@@ -1,0 +1,74 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="{% static 'logins.js'%}"></script>
+    <link rel="stylesheet" href="{% static '/css/login.css'%}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    
+  
+
+</head>
+<body>
+    <nav>
+
+
+    </nav>
+    <section>
+      <div class="wrapper fadeInDown">
+        <div id="formContent">
+          <!-- Tabs Titles -->
+      
+          <!-- Icon -->
+          <div class="fadeIn first ">
+            <img class="img-fluid" src="https://img.freepik.com/free-vector/doctor-background-design_1270-62.jpg?w=740&t=st=1676724564~exp=1676725164~hmac=00c592577d0c6b1bf6569680ed15830c22c161514b850ac8e2a15d58e1d18c8d" alt="Trendy Pants and Shoes" id="icon" alt="User Icon"  />
+          </div>
+
+
+          <form id="loginForm" method="post">{% csrf_token %}
+            <div class="form-group">
+              <label for="username">Username</label>
+              <input type="text" class="form-control" id="username" name="username">
+              <div id="usernameError" class="text-danger"></div>
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" class="form-control" id="password" name="password">
+              <div id="passwordError" class="text-danger"></div>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+          
+      
+          <!-- Login Form -->
+          <!-- <form action="" method="get" id="loginForm" >
+            <div class="form-group">
+            <input type="text" name="username" id="username" class="fadeIn second form-control"  placeholder="username">
+            <div id="usernameError" class="text-danger"></div>
+          </div>
+          
+            <div class="form-group">
+            <input  type="password" name="password" id="password" class="fadeIn third form-control"  placeholder="password">
+            <div id="passwordError" class="text-danger"></div>
+          </div>
+            
+            <input  id="submit" type="submit"  class="fadeIn fourth" value="submit">
+          </form> -->
+      
+          <!-- Remind Passowrd -->
+          <!-- <div id="formFooter">
+            <a class="underlineHover" href="#">Forgot Password?</a>
+          </div>
+       -->
+        </div>
+      </div>
+    </section>
+    
+    
+</body>
+</html>

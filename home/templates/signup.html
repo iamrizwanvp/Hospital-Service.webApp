@@ -1,0 +1,96 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/
+	4.0.0/css/bootstrap.min.css">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/
+	jquery/3.3.1/jquery.min.js">
+	</script>
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/
+	popper.js/1.12.9/umd/popper.min.js">
+	</script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/
+	4.0.0/js/bootstrap.min.js">
+	</script>
+</head>
+
+<body><br>
+	<div class=" row col-4 mx-auto d-block  ">
+		<img id="im" class="img-fluid align-center" src="https://img.freepik.com/free-vector/doctor-character-background_1270-84.jpg?w=740&t=st=1676724273~exp=1676724873~hmac=a4c9c40226bc31e8a6330131b5f572151c9db073ce06a85b6ec1c8f6bb27d685">  
+	</div>
+	<div class="container">
+   
+</div>
+
+
+  <!-- <div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">
+          
+    <img src=""
+      class="img-fluid"  alt="Sample image">
+
+  </div> -->
+	
+
+
+	<div class="container">
+		<div class="col-lg-8
+		m-auto d-block">
+			<form >
+				<div class="form-group">
+					<label for="user">
+						Username:
+					</label>
+					<input type="text" name="username" id="usernames" class="form-control">
+					<h5 id="usercheck" style="color: red;">
+						**Username is missing
+					</h5>
+				</div>
+				
+				<div class="form-group">
+					<label for="user">
+						Email:
+					</label>
+					<input type="email" name="email" id="email" required class="form-control">
+					<small id="emailvalid" class="form-text
+				text-muted invalid-feedback">
+						Enter a valid Email
+					</small>
+				</div>
+
+				<div class="form-group">
+					<label for="password">
+						Password:
+					</label>
+					<input type="password" name="pass" id="password" class="form-control">
+					<h5 id="passcheck" style="color: red;">
+						**Please Fill the password
+					</h5>
+				</div>
+
+				<div class="form-group">
+					<label for="conpassword">
+						Confirm Password:
+					</label>
+					<input type="password" name="username" id="conpassword" class="form-control">
+					<h5 id="conpasscheck" style="color: red;">
+						**Password didn't match
+					</h5>
+				</div>
+
+				<div class="text-center"><input  type="submit" id="submitbtn" value="Submit" class="btn btn-primary  "> </div>
+			</form>
+		</div>
+    
+	</div>
+
+	<!-- Including app.js jQuery Script -->
+	<script src="{% static 'register.js'%}"></script>
+</body>
+
+</html>

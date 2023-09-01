@@ -1,0 +1,69 @@
+/* Style the caption text */
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    bottom: 0;
+    color: #fff;
+    padding: 20px;
+    position: absolute;
+    width: 100%;
+  }
+  
+  /* Style the caption heading */
+  .carousel-caption h3 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px #000;
+  }
+  
+  /* Style the caption paragraph */
+  .carousel-caption p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px #000;
+  }
+  
+  /* Style the carousel navigation icons */
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: #000;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+  }
+  
+  /* Style the carousel navigation arrows */
+  .carousel-control-prev,
+  .carousel-control-next {
+    background-color: transparent;
+    height: 100%;
+    width: auto;
+  }
+  
+  /* Style the carousel navigation arrows on hover */
+  .carousel-control-prev:hover,
+  .carousel-control-next:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Style the active carousel item */
+  .carousel-item.active {
+    transition: opacity 0.5s;
+  }
+  
+  /* Style the non-active carousel items */
+  .carousel-item {
+    transition: opacity 0.5s;
+  }
+  
+  /* Style the carousel images */
+  .carousel-item img {
+    object-fit: cover;
+    height: 100vh;
+    width: 100%;
+  }
+  
+img{
+    width: 100px;
+    height: 200px;
+
+}  
